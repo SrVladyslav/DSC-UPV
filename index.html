@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Vladyslav Mazurkevych</title>
+	<title>DSC - UPV</title>
 	<!--/////////PAGE DESIGN///////////////-->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta content="Profile of Vladyslav Mazurkevych">
+	<meta content="Developer Student Clubs son grupos comunitarios basados en universidades para estudiantes interesados en las tecnologías de desarrolladores, entre ellas las de Google. Los estudiantes de todos los programas de grado o posgrado que estén interesados en crecer como desarrolladores son bienvenidos. Al unirse a un DSC, los estudiantes aumentan su conocimiento en un entorno de aprendizaje peer-to-peer y crean soluciones para las empresas locales y su comunidad.">
 	<!--Fav-->
   	<link href="img/DSCLogo.png" rel="shortcut icon">
 	<!--/////////PAGE DESIGN END///////////-->
@@ -211,6 +211,30 @@
 	   </div>
 	</footer>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script>
+		const navSlide = () => {
+	    const burger= document.querySelector('.burger');
+	    const nav = document.querySelector('.nav-links');
+	    const navLinks = document.querySelectorAll('.nav-links li');
+	   //Toggle nav
+	   burger.addEventListener('click', () => {
+		  //document.write("hi");
+		  nav.classList.toggle('nav_active');
+
+		  //Animate links
+		  navLinks.forEach((link, index) =>{
+			  if(link.style.animation){
+				  link.style.animation = '';
+			  } else {
+				  link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+			  }
+		   });
+		   //Burger animation
+		   burger.classList.toggle('toggle');
+	      });
+	     }
+        navSlide();
+	</script>
 	<script type="text/javascript" charset="utf-8">
 	  //DETECTS THE POSITION ON THE SCREEN
 		$(document).ready(function() {
@@ -241,31 +265,6 @@
 	<script src="js/barAnimation.js"></script>
 	<script>
 	  AOS.init();
-	</script>
-	<script>
-		const navSlide = () => {
-	    const burger= document.querySelector('.burger');
-	    const nav = document.querySelector('.nav-links');
-	    const navLinks = document.querySelectorAll('.nav-links li');
-	   //Toggle nav
-	   burger.addEventListener('click', () => {
-		  //document.write("hi");
-		  nav.classList.toggle('nav_active');
-
-		  //Animate links
-		  navLinks.forEach((link, index) =>{
-			  if(link.style.animation){
-				  link.style.animation = '';
-			  } else {
-				  link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
-			  }
-		   });
-		   //Burger animation
-		   burger.classList.toggle('toggle');
-	      });
-	     }
-
-        navSlide();
 	</script>
 </body>
 </html>
