@@ -1,0 +1,44 @@
+html, body {
+	height: 100%;
+}
+
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    margin:0 !important; 
+    color: #00b55b;
+    align-content: center !important;
+}
+
+.title {
+	font-size: 5em;
+	font-weight: bold;
+	color:  black;
+	align-content: center;
+	text-align: center;
+	font-family: 'Righteous', cursive;
+}
+
+.send {
+	background-color: #14AB00;
+	background: #14AB00;
+	width: 20%;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 450px) {
+    .title {
+				font-size: 2.5em;
+    }
+}
+
+@media only screen and (max-width: 260px) {
+    .title {
+				font-size: 1.5em;
+    }
+}
