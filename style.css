@@ -74,6 +74,12 @@ body {
 	margin-top: 3em;
 }
 
+.img_description_l {
+  height: auto; 
+  width: 25em; 
+  margin-top: 3em;
+}
+
 .img_description {
   height: auto; 
   width: 25em; 
@@ -406,15 +412,23 @@ nav {
 
 
 @media only screen and (max-width: 766px ){
-  .img_description {
-    height: auto; 
-    width: 90%; 
+  .img_description_l {
+    width: 100%!important; 
+    height: auto;
     margin-top: 1em;
     margin-left: 4.5em;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 50%;
+  }
+  .img_description { 
+    width: 80%!important; 
+    height: auto;
+    margin-top: 1em;
+    margin-left: 4.5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
