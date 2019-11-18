@@ -20,6 +20,26 @@ body {
   margin:0;
 }
 
+#countdown {
+  position: relative;
+  width: 100%;
+  font-size: 7em;
+  margin: 0;
+  color: #F4B400;/*#0F9D58;*/
+  text-align: center;
+}
+
+#countdown1 {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.6);/*#0F9D58; 15, 157, 88*/
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border-radius: 80px;
+  margin-left: 23%!important;
+  margin-top: 20%!important;
+  width: 60%;
+  margin: 0;
+}
+
 .a{
 	text-decoration: none;
 	color: black;
@@ -328,10 +348,24 @@ nav {
 }
 
 
+
+@media screen and (max-width: 1340px){
+  #countdown {
+    font-size: 5em; 
+  }
+}
+
 @media screen and (max-width: 1024px){
   .nav-links {
     width: 60%; 
   }
+}
+
+@media screen and (max-width: 940px){
+  #countdown {
+    font-size: 3em; 
+  }
+}
 
 @media screen and (max-width: 768px){
   .nav-links {
@@ -352,6 +386,19 @@ nav {
   @media screen and (max-width: 576px){
     .languages {
       margin: 0em!important;
+    }
+
+    #countdown {
+      font-size: 1.5em; 
+    }
+  }
+
+  @media screen and (max-width: 300px){
+    #countdown {
+      font-size: 1.2em; 
+    }
+    #countdown1 {
+      margin-top: 30%!important; 
     }
   }
 
