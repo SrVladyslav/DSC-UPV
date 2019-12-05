@@ -176,7 +176,7 @@ body {
 }
 
 .card {
-  min-height: 18em;
+  min-height: 30em;
 	height: 100%;
 	border-radius: 0px;
 	font-family: 'Patua One', cursive;
@@ -381,6 +381,10 @@ nav {
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
     z-index: 999;
+  }
+
+  .card {
+    min-height: 15em;
   }
 
   @media screen and (max-width: 576px){
